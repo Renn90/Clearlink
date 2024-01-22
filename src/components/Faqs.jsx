@@ -21,7 +21,7 @@ const Faqs = () => {
         <h2 className="text-3xl font-semibold my-2">FAQs</h2>
         <p className="text-sm text-darkgrey w-2/3">
           Everything you need to know about the product and billing. Can't find
-          the answer you're looking for? Please{" "}
+          the answer you're looking for? Please
           <span className="underline">chat to our friendly team.</span>
         </p>
       </div>
