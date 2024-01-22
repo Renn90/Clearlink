@@ -16,7 +16,9 @@ export default {
       },
       colors: {
        primary: '#175CD3',
-       white: '#FFFFFF'
+       white: '#FFFFFF',
+       grey: '#F2F4F7',
+       darkgrey: '#667085'
     },
     },
   },
