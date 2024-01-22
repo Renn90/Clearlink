@@ -53,7 +53,7 @@ const Footer = () => {
           <AiFillApple className="text-2xl mr-1"/>
           <p className="text-[10px] flex flex-col">
             Dawnload on the
-            <span className="text-sm">App Store</span>
+            <span className="text-sm">App Stores</span>
           </p>
         </div>
         <div className="bg-black rounded-lg flex items-center my-2 p-2 px-4 text-white">
