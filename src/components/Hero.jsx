@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "./UI/Button";
-import { FaRobot } from "react-icons/fa6";
+import { FaRobot } from "react-icons/fa";
 import avater from "../assets/Avatar group.png";
 import hero from "../assets/heroImg.png";
 import shopify from '../assets/spLogo/shopify.png'

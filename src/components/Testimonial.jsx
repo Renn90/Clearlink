@@ -4,7 +4,7 @@ import Rating from "./UI/Rating";
 import sarah from "../assets/Sarah.png";
 import textImg from "../assets/testImg.png";
 import { FaArrowLeft } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
 
 const Testimonial = () => {
   return (
