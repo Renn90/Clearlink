@@ -9,8 +9,8 @@ import { FaArrowRight } from "react-icons/fa6";
 const Testimonial = () => {
   return (
     <div className="bg-grey py-8 w-full">
-    <div className="container flex justify-between items-center">
-      <div className="text-start w-1/2">
+    <div className="container flex flex-col justify-between items-center md:flex-row">
+      <div className="text-start w-full md:w-1/2">
         <img src={shopify} alt="logo" className="w-[100px]" />
         <div className="py-8">
           <Rating />
@@ -33,7 +33,7 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
-      <img src={textImg} alt="img" className="w-[400px]"/>
+      <img src={textImg} alt="img" className="w-full my-6 md:my-0 md:w-[400px]"/>
     </div>
     </div>
   );

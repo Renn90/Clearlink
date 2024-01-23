@@ -15,8 +15,9 @@ const Faqs = () => {
   const arrowDiv = "flex items-start justify-between my-2";
 
   return (
-    <div className="container flex justify-between py-[96px]">
-      <div className="w-1/2">
+    <div className="container">
+      <div className="flex flex-col justify-between py-[96px] md:flex-row">
+      <div className="w-full md:w-1/2">
         <h4 className="text-xs text-primary font-medium">Support</h4>
         <h2 className="text-3xl font-semibold my-2">FAQs</h2>
         <p className="text-sm text-darkgrey w-2/3">
@@ -25,7 +26,7 @@ const Faqs = () => {
           <span className="underline">chat to our friendly team.</span>
         </p>
       </div>
-      <div className="w-1/2">
+      <div className="w-full md:w-1/2 my-4 md:my-0">
         <div className={`${display === 1 && "bg-grey rounded"} p-2 pb-0 `}>
           <div className={arrowDiv}>
             <h1 className={heading}>
@@ -165,6 +166,7 @@ const Faqs = () => {
           </p>
           <hr />
         </div>
+      </div>
       </div>
     </div>
   );

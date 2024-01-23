@@ -15,8 +15,8 @@ const Hero = () => {
   return (
     <section className="bg-img mt-[-50px]">
         <div className="container">
-      <div className="pt-[200px] relative z-[99] flex justify-between items-center h-full">
-        <div className="flex flex-col justify-between items-start h-full text-start w-1/2">
+      <div className="pt-[200px] relative z-[99] flex flex-col justify-between items-center h-full md:flex-row">
+        <div className="flex flex-col justify-between items-start h-full text-start w-full md:w-1/2">
           <h1 className="text-4xl font-bold my-2">
             Uniting the world, one video call at a time
           </h1>
@@ -24,13 +24,13 @@ const Hero = () => {
             Experience the future of communication with ClearLink where
             crystal-clear video conferencing meets unparalleled simplicity.
           </p>
-          <span className="flex my-2">
+          <span className="flex flex-col my-2 md:flex-row">
             <Button cta={"Start your free trial"} />
             <p className="flex items-center text-primary mx-3">
-              <FaRobot className="mr-1" /> Discover ai assistant
+              <FaRobot className="mr-1 my-2 md:my-0" />Discover ai assistant
             </p>
           </span>
-          <div className="flex items-center my-2">
+          <div className="flex items-center my-0 md:my-2">
             <img src={avater} alt="avater" className="w-[100px]" />
             <span className="mx-3">
              <Rating />
@@ -38,17 +38,17 @@ const Hero = () => {
             </span>
           </div>
         </div>
-        <img src={hero} alt="hero" className="w-[38%] shd" />
+        <img src={hero} alt="hero" className="shd w-[70%] my-5 md:my-0 md:w-[38%]" />
       </div>
       <div className="mt-3">
        <p className="my-2 text-darkgrey">Join 1,500+ companies already video conferencing the ClearLink way</p>
-       <div className="flex justify-between items-center">
-        <img src={shopify} alt="logo" className="w-[100px]"/>
-        <img src={coinbase} alt="logo" className="w-[100px]"/>
-        <img src={dropbox} alt="logo" className="w-[100px]"/>
-        <img src={intercom} alt="logo" className="w-[100px]"/>
-        <img src={marvel} alt="logo" className="w-[100px]"/>
-        <img src={Automattic} alt="logo" className="w-[100px]"/>
+       <div className="flex flex-wrap justify-between items-center">
+        <img src={shopify} alt="logo" className="w-[100px] p-3"/>
+        <img src={coinbase} alt="logo" className="w-[100px] p-3"/>
+        <img src={dropbox} alt="logo" className="w-[100px] p-3"/>
+        <img src={intercom} alt="logo" className="w-[100px] p-3"/>
+        <img src={marvel} alt="logo" className="w-[100px] p-3"/>
+        <img src={Automattic} alt="logo" className="w-[100px] p-3"/>
        </div>
       </div>
       </div>

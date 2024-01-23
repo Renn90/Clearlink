@@ -6,7 +6,8 @@ import arrow from '../assets/arrow.png'
 const WhySection = () => {
   const icon = ' bg-grey rounded-full p-2 text-4xl text-primary border-[1px] border-lightgrey'
   return (
-    <div className="container text-start py-[100px]">
+    <div className="container text-start">
+      <div className="py-[96px]">
       <div>
         <h4 className="text-xs text-primary font-medium">The ClearLink Advantage</h4>
         <h2 className="text-2xl font-semibold my-2">Why choose ClearLink?</h2>
@@ -15,9 +16,9 @@ const WhySection = () => {
           Our cutting-edge video conferencing app offers:
         </p>
       </div>
-      <div className="flex justify-between items-center w-full">
-        <div className="w-1/2 mt-[30px]">
-          <span className="flex">
+      <div className="flex flex-col justify-between items-center w-full md:flex-row">
+        <div className="w-full mt-[30px] md:w-1/2">
+          <span className="flex flex-col sm:flex-row">
           <div className="m-3 ml-0">
             <TbBrandZoom className={icon}/>
             <h3 className="text-lg my-2 font-semibold">Crystal-clear HD video</h3>
@@ -29,7 +30,7 @@ const WhySection = () => {
             <p className="text-xs text-darkgrey">Say goodbye to distractions with our advanced audio tech for crisp, interruption-free conversations.</p>
           </div>
           </span>
-          <span className="flex">
+          <span className="flex flex-col sm:flex-row">
           <div className="m-3 ml-0">
             <TbBrandZoom className={icon}/>
             <h3 className="text-lg my-2 font-semibold">Scheduling made easy</h3>
@@ -42,10 +43,11 @@ const WhySection = () => {
           </div>
           </span>
         </div>
-        <div className="relative">
-        <img src={arrow} alt="img" className="absolute right-[40%] w-[150px] top-[-100px]"/>
-        <img src={why} alt="img" className="w-[350px]"/>
+        <div className="relative my-4 md:my-0">
+        <img src={arrow} alt="img" className="absolute right-[40%] w-[150px] top-[-100px] hidden md:flex"/>
+        <img src={why} alt="img" className="w-[100%] md:w-[350px]"/>
         </div>
+      </div>
       </div>
     </div>
   );
