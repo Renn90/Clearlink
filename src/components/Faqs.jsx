@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { LuPlus, LuMinus } from "react-icons/lu";
+import { FaMinus, FaPlus } from "react-icons/fa";
 
 const Faqs = () => {
   const [display, setDisplay] = useState(null);
@@ -34,9 +34,9 @@ const Faqs = () => {
             </h1>
             <span onClick={() => changeDisplay(1)}>
               {display === 1 ? (
-                <LuMinus className={arrow} />
+                <FaMinus className={arrow} />
               ) : (
-                <LuPlus className={arrow} />
+                <FaPlus className={arrow} />
               )}
             </span>
           </div>
@@ -58,9 +58,9 @@ const Faqs = () => {
             </h1>
             <span onClick={() => changeDisplay(2)}>
               {display === 2 ? (
-                <LuMinus className={arrow} />
+                <FaMinus className={arrow} />
               ) : (
-                <LuPlus className={arrow} />
+                <FaPlus className={arrow} />
               )}
             </span>
           </div>
@@ -81,9 +81,9 @@ const Faqs = () => {
             </h1>
             <span onClick={() => changeDisplay(3)}>
               {display === 3 ? (
-                <LuMinus className={arrow} />
+                <FaMinus className={arrow} />
               ) : (
-                <LuPlus className={arrow} />
+                <FaPlus className={arrow} />
               )}
             </span>
           </div>
@@ -104,9 +104,9 @@ const Faqs = () => {
             </h1>
             <span onClick={() => changeDisplay(4)}>
               {display === 4 ? (
-                <LuMinus className={arrow} />
+                <FaMinus className={arrow} />
               ) : (
-                <LuPlus className={arrow} />
+                <FaPlus className={arrow} />
               )}
             </span>
           </div>
@@ -127,9 +127,9 @@ const Faqs = () => {
             </h1>
             <span onClick={() => changeDisplay(5)}>
               {display === 5 ? (
-                <LuMinus className={arrow} />
+                <FaMinus className={arrow} />
               ) : (
-                <LuPlus className={arrow} />
+                <FaPlus className={arrow} />
               )}
             </span>
           </div>
@@ -150,9 +150,9 @@ const Faqs = () => {
             </h1>
             <span onClick={() => changeDisplay(6)}>
               {display === 6 ? (
-                <LuMinus className={arrow} />
+                <FaMinus className={arrow} />
               ) : (
-                <LuPlus className={arrow} />
+                <FaPlus className={arrow} />
               )}
             </span>
           </div>
