@@ -12,24 +12,33 @@ const NavBar = () => {
     setToggleBar(!toggleBar)
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     const handleResize = () => {
-   setScreenSize(window.innerWidth >= 768);
-   if(screenSize){
-    console.log(screenSize)
-   }else{
-    console.log('jjjj')
-   }
- };
- window.addEventListener('resize', handleResize);
-
- // Initial check
- handleResize();
-
- return () => {
-   window.removeEventListener('resize', handleResize);
- };
- },[screenSize])
+      setScreenSize(window.innerWidth >= 768);
+    };
+    window.addEventListener('resize', handleResize);
+  
+    // Initial check
+    handleResize();
+  
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setToggleBar(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+  
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  
 
   const li = "flex items-center text-xs mx-4 my-4 md:my-0";
   return (
