@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
-import { FaAngleDown } from "react-icons/fa6";
+
 import Button from "./UI/Button";
 import { IoMenu } from "react-icons/io5";
 
@@ -48,13 +48,13 @@ const NavBar = () => {
           <div className={`flex items-center md:justify-between w-3/4 ${!toggleBar && !screenSize && 'hidden'} ${!screenSize && 'fixed top-[0px] w-[60%] left-0 bg-white p-4 flex-col justify-start h-[100vh]'}`}>
             <ul className="flex flex-col text-darkgrey md:flex-row">
               <li className={li}>
-                Products <FaAngleDown className="mx-1 text-xs" />
+                Products 
               </li>
               <li className={li}>
-                Solutions <FaAngleDown className="mx-1 text-xs" />
+                Solutions 
               </li>
               <li className={li}>
-                Resourses <FaAngleDown className="mx-1 text-xs" />
+                Resourses 
               </li>
               <li className={li}>Pricing</li>
             </ul>
