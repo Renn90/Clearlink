@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/logo.png";
-import { AiFillApple } from "react-icons/ai";
+import { FaApple } from "react-icons/fa";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 
@@ -57,7 +57,7 @@ const Footer = () => {
       <div className="flex flex-col items-start">
       <h4 className="text-xs text-primary font-medium">Get the app</h4>
         <div className="bg-black cursor-pointer rounded-lg flex items-center my-2 p-2 px-4 text-white hover:opacity-60">
-          <AiFillApple className="text-2xl mr-1"/>
+          <FaApple className="text-2xl mr-1"/>
           <p className="text-[10px] flex flex-col">
             Dawnload on the
           <span className="text-sm">App Store</span>
