@@ -35,3 +35,20 @@ html{
   transition: max-height .3s ease-out;
   max-height: 0px;
 }
+@keyframes slideIn{
+  0%{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+.sidebar{
+  max-width: 80px!important;
+  transition: max-width 1s ease-out;
+}
+.slide-in{
+  animation: slideIn 1s;
+}

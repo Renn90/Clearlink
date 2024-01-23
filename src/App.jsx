@@ -10,7 +10,7 @@ import WhySection from './components/WhySection'
 function App() {
 
   return (
-    <>
+    <div>
      <NavBar />
      <Hero />
      <WhySection />
@@ -18,7 +18,7 @@ function App() {
      <Faqs />
      <Offer />
      <Footer />
-    </>
+    </div>
   )
 }
 
