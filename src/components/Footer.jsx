@@ -16,7 +16,7 @@ const Footer = () => {
           conferencing. Join us in shaping the future of communication!
         </p>
       </div>
-      <div className="flex flex-col my-4 justify-between w-full md:flex-row md:w-2/4">
+      <div className="flex flex-col my-4 justify-between w-full md:flex-row md:w-2/4 nis">
         <div className="flex justify-between w-full md:justify-around md:w-2/4">
         <ul className="text-sm text-darkgrey font-semibold p-5 pl-0 md:p-0">
           <li className="mb-2 font-medium">Product</li>
