@@ -40,7 +40,7 @@ const NavBar = () => {
   }, []);
   
 
-  const li = "flex items-center text-xs mx-4 my-4 md:my-0";
+  const li = "flex items-center text-xs mx-4 my-4 md:my-0 cursor-pointer hover:opacity-80";
   return (
     <nav className="container fixed inset-x-0 top-5 border-[1px] border-lightgrey z-[999] bg-grey rounded-full">
       <div className="p-4 flex justify-between items-center">
