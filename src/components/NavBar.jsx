@@ -59,7 +59,7 @@ const NavBar = () => {
               <li className={li}>Pricing</li>
             </ul>
             <div className="flex flex-col text-xs md:flex-row">
-              <button className="rounded-full text-xs px-4 py-2 bg-white border-[1px] border-lightgrey mx-1 my-4 md:my-0">
+              <button className="rounded-full text-xs px-4 py-2 bg-white border-[1px] border-lightgrey mx-1 my-4 md:my-0 hover:opacity-75">
                 Talk to Sales
               </button>
               <Button cta={"Sign up for free"} />
