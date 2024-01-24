@@ -10,7 +10,7 @@
 }
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 .container{
     max-width: 1080px;
@@ -19,7 +19,7 @@ html{
     padding: 0 20px;
 }
 .bg-img{
-  background-image: url('../src/assets/Background\ pattern.png');
+  background-image: url('../src/assets/Background pattern.png');
   background-position: center;
 }
 .shd{
