@@ -54,17 +54,17 @@ const NavBar = () => {
               <li className={li} onMouseEnter={()=> setShowProducts(true)} onMouseLeave={()=> setShowProducts(false)}>
                 Products <FaAngleDown className="mx-1 text-xs" />
                {showProducts && <div className="bg-white p-2 absolute top-10 flex flex-col shadow-md rounded items-start">
-                  <a href="#" className="m-1 hover:opacity-55 ">Our Product</a>
-                  <a href="#" className="m-1 hover:opacity-55">Our Product</a>
-                  <a href="#" className="m-1 hover:opacity-55">Our Product</a>
+                  <a href="#" className="m-1 hover:opacity-55 ">Ai assistant</a>
+                  <a href="#" className="m-1 hover:opacity-55">video Call</a>
+                  <a href="#" className="m-1 hover:opacity-55">Overview</a>
                 </div>}
               </li>
               <li className={li} onMouseEnter={()=> setShowSolutions(true)} onMouseLeave={()=> setShowSolutions(false)}>
                 Solutions <FaAngleDown className="mx-1 text-xs" />
                 {showSolutions && <div className="bg-white p-2 absolute top-10 flex flex-col shadow-md rounded items-start">
-                  <a href="#" className="m-1 hover:opacity-55 ">Our Product</a>
-                  <a href="#" className="m-1 hover:opacity-55">Our Product</a>
-                  <a href="#" className="m-1 hover:opacity-55">Our Product</a>
+                  <a href="#" className="m-1 hover:opacity-55 ">Schedule</a>
+                  <a href="#" className="m-1 hover:opacity-55">Meeting</a>
+                  <a href="#" className="m-1 hover:opacity-55">Product</a>
                 </div>}
               </li>
               <li className={li}>
