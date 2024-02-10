@@ -8,6 +8,10 @@ const NavBar = () => {
   const [toggleBar, setToggleBar] = useState(false)
   const [screenSize, setScreenSize] = useState(null)
 
+  // dropdown state
+  const [showProducts, setShowProducts] = useState(false)
+  const [showSolutions, setShowSolutions] = useState(false)
+
   const toggleHandler =()=> {
     setToggleBar(!toggleBar)
   }
@@ -47,14 +51,24 @@ const NavBar = () => {
         <img src={logo} alt="logo" className="w-[100px]" />
           <div className={`flex items-center md:justify-between w-3/4 ${!toggleBar && !screenSize && 'hidden'} ${!screenSize && 'fixed top-[0px] w-[60%] left-0 bg-white p-4 flex-col justify-start h-[100vh]'}`}>
             <ul className="flex flex-col text-darkgrey md:flex-row">
-              <li className={li}>
+              <li className={li} onMouseEnter={()=> setShowProducts(true)} onMouseLeave={()=> setShowProducts(false)}>
                 Products <FaAngleDown className="mx-1 text-xs" />
+               {showProducts && <div className="bg-white p-2 absolute top-10 flex flex-col shadow-md rounded items-start">
+                  <a href="#" className="m-1 hover:opacity-55 ">Our Product</a>
+                  <a href="#" className="m-1 hover:opacity-55">Our Product</a>
+                  <a href="#" className="m-1 hover:opacity-55">Our Product</a>
+                </div>}
               </li>
-              <li className={li}>
+              <li className={li} onMouseEnter={()=> setShowSolutions(true)} onMouseLeave={()=> setShowSolutions(false)}>
                 Solutions <FaAngleDown className="mx-1 text-xs" />
+                {showSolutions && <div className="bg-white p-2 absolute top-10 flex flex-col shadow-md rounded items-start">
+                  <a href="#" className="m-1 hover:opacity-55 ">Our Product</a>
+                  <a href="#" className="m-1 hover:opacity-55">Our Product</a>
+                  <a href="#" className="m-1 hover:opacity-55">Our Product</a>
+                </div>}
               </li>
               <li className={li}>
-                Resourses <FaAngleDown className="mx-1 text-xs" />
+                Resourses
               </li>
               <li className={li}>Pricing</li>
             </ul>
